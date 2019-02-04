@@ -17,7 +17,14 @@
       yum:
         name: libselinux-python
         state: present
-
+    - name: download epel
+      shell:  wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -O /tmp/epel-release-latest-7.noarch.rpm
+    - name: Install epel
+      shell:  yum -y localinstall /tmp/epel*rpm
+    - name: Install python-pip
+      yum:
+        name: python-pip
+        state: latest
 # post_tasks:
 #   - name: Install texlive
 #     yum:
