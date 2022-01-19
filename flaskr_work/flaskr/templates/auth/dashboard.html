@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block header %}
+   <h1>{% block title %}Dashboard{% endblock%}</h1>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="dist/themes/proton/style.min.css" />
+<script src="dist/libs/jquery.js"></script>
+<script src="dist/jstree.min.js"></script>
+<div id="container">
+  <ul>
+    <li>Root node
+      <ul>
+        <li id="child_node">Child node</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<script>
+$(function() {
+  $('#container').jstree({
+    'core': {
+        'themes': {
+            'name': 'proton',
+            'responsive': true
+        }
+    }
+  });
+});
+</script>
+{% endblock %}
