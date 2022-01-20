@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block header %}
+   <h1>{% block title %}Dashboard{% endblock%}</h1>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='dist/themes/proton/style.min.css') }}" />
+<script src="{{ url_for('static', filename='dist/libs/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='dist/jstree.min.js') }}"></script>
+<div class="table">
+<div class="row">
+  <div class="cell"> 
+    <div id="container" style="padding: 10px;height: 100%">
+    <ul>
+      <li>Research Environment
+        <ul>
+          <li id="child_node1">Child node1</li>
+          <li id="child_node2">Child node2</li>
+          <li id="child_node3">Child node3</li>
+        </ul>
+      </li>
+      <li>Database Systems
+          <ul>
+              <li id="child_node11">DB1</li>
+              <li id="child_node12">DB2</li>
+          </ul>
+        </li>
+    </ul>
+    </div>
+  </div>
+  <div class="cell" id="content_detail">
+
+  </div>
+
+</div>
+<script>
+$(function() {
+  $('#container').jstree({
+    'core': {
+        'themes': {
+            'name': 'proton',
+            'responsive': true
+        }
+    }
+  });
+});
+</script>
+{% endblock %}
