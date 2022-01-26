@@ -13,3 +13,29 @@ $flask run
 ##### Flask Errors and Fixes
 - _endpoint_from_view_func
   - Use flask==1.1.2 instead of 2.x 
+
+##### Javascript Testing Framework
+- [https://jestjs.io](https://jestjs.io) <br/> 
+
+##### Vue with Flask
+- Install Vue.js
+  ```
+  $npm install -g @vue/cli@4.5.11
+  ## To update vue
+  $npm i -g @vue/cli
+  ```
+- Initialize a new Vue project called client
+  ```
+  $vue create client
+
+  Vue CLI v4.5.11
+  ? Please pick a preset: (Use arrow keys)
+  ❯ Default ([Vue 2] babel, eslint)
+    Default (Vue 3 Preview) ([Vue 3] babel, eslint)
+    Manually select features
+  ```
+
+- Run Vue Server
+  ```
+  $npm run serve
+  ```
