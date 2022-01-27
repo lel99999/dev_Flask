@@ -45,7 +45,8 @@ $flask run
   ```
   1:1  error  Parsing error: Unexpected token <
   ``` 
-  
+  Fix: </br>
+  ![.eslintrc.js](https://github.com/lel99999/dev_Flask/blob/master/eslintconfig-01.png) </br>
 
 ##### Node/NPM Issues & Errors
 -
