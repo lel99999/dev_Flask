@@ -39,3 +39,13 @@ $flask run
   ```
   $npm run serve
   ```
+
+##### Vue Errors:
+- Parsing Error (eslint issue)
+  ```
+  1:1  error  Parsing error: Unexpected token <
+  ``` 
+  
+
+##### Node/NPM Issues & Errors
+-
